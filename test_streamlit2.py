@@ -1,7 +1,9 @@
+import streamlit as st
+
 import appdirs as ad
 ad.user_cache_dir = lambda *args: "/tmp"
-import streamlit as st
 import yfinance as yf
+
 from datetime import datetime, timedelta
 import plotly.graph_objects as go
 from statsmodels.tsa.arima.model import ARIMA
